@@ -14,7 +14,6 @@ body {
 }
 
 .sidebar {
-  border: 2px solid red;
   padding: 15px;
   width: 20%;
   background-color: #040b14;
@@ -24,7 +23,6 @@ body {
 }
 
 .main {
-  border: 2px solid red;
   /* padding: 30px; */
   width: 80%;
 }
