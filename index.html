@@ -21,80 +21,10 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <style>
-      * {
-        margin: 0;
-        list-style: none;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        /* outline: 2px solid greenyellow; */
-      }
-      .wrapper {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .sidebar {
-        border: 2px solid red;
-        padding: 15px;
-        width: 25%;
-        background-color: #040b14;
-        /* word-break: break-all; */
-        /* position: fixed (Distorts UI - DOUBT) */
-        position: -webkit-sticky;
-      }
-
-      .main {
-        border: 2px solid red;
-        /* padding: 30px; */
-        width: 75%;
-        height: 100vh;
-      }
-
-      ul > li > a {
-        text-decoration: none;
-        color: white;
-        border-radius: 20%;
-        opacity: 0.7;
-      }
-
-      ul > li > a:hover {
-        opacity: 1;
-        transition: 0.3s;
-      }
-
-      .profile-pic {
-        margin: auto;
-      }
-
-      .social {
-        margin: 0 40px;
-      }
-
-      .info-social > li > a {
-        /* border: 1px solid red;
-        border-radius: 50%; */
-      }
-
-      .info-content {
-        height: 40vh;
-      }
-
-      .img-home > img {
-        width: 100%;
-        height: 100%;
-      }
-
-      .location {
-        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
-      }
-
-      .contact-form {
-        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
-      }
-    </style>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper d-flex">
       <!-- Sidebar -->
       <div class="sidebar d-flex flex-column justify-content-evenly">
         <div class="social d-flex flex-column">
@@ -120,7 +50,7 @@
               </li>
               <li>
                 <a href="#"
-                  ><i class="fab fa-github   fa-lg" style="color: #a2c4ff"></i
+                  ><i class="fab fa-github fa-lg" style="color: #a2c4ff"></i
                 ></a>
               </li>
               <li>
@@ -134,30 +64,30 @@
         <div class="content-links">
           <ul class="info-content d-flex flex-column justify-content-between">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="copyright text-white text-center">© Copyright</div>
       </div>
       <!-- Main content -->
-      <div class="main bg-body-tertiary d-flex flex-column">
+      <div class="main d-flex flex-column">
         <div class="img-home" data-aos="fade-in" data-aos-duration="2000">
           <img
             src="../../Clones/Airbnb/img/francesca-saraco-_dS27XGgRyQ-unsplash.jpg"
             alt="Pic1"
           />
         </div>
-        <div class="about-section p-4">
+        <div class="about-section p-4" id="about">
           <h2>About</h2>
           Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
           aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
           quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
           quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
         </div>
-        <div class="skill-section bg-body-tertiary p-4">
+        <div class="skill-section p-4">
           <h2>Skills</h2>
           <span
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
@@ -168,7 +98,7 @@
             consectetur quod harum voluptatibus quos. Repellat, voluptas.</span
           >
 
-          <div class="skills row mt-4 p-2">
+          <div class="skills row mt-4 p-2" id="skills">
             <div class="col-lg-6 col-md-6 col-sm-12">
               <div class="d-flex justify-content-between mt-2">
                 <h5>OOPS</h5>
@@ -262,7 +192,10 @@
             </div>
           </div>
         </div>
-        <div class="contact-page bg-body-tertiary d-flex flex-column p-4">
+        <div class="projects">
+          <div class="project-card"></div>
+        </div>
+        <div class="contact-page d-flex flex-column p-4" id="contact">
           <h2>Contact Us</h2>
           <span
             >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
@@ -270,7 +203,7 @@
             voluptatum iste et quo minus adipisci exercitationem minima neque
             veniam.
           </span>
-          <div class="contact-info row gap-1 mt-4">
+          <div class="contact-info row gap-1 mt-4 container">
             <div class="location col-lg-5 col-sm-12">
               <ul class="d-flex flex-column text-center gap-3 mt-4">
                 <li>
