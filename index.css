@@ -4,9 +4,7 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   /* outline: 2px solid greenyellow; */
 }
-body {
-  display: block;
-}
+
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -23,8 +21,12 @@ body {
 }
 
 .main {
-  /* padding: 30px; */
-  width: 80%;
+  max-width: 80%;
+  background-color: #effded;
+}
+
+.main > div:nth-child(2n + 1) {
+  background-color: #f0f0f0;
 }
 
 ul > li > a {
@@ -56,15 +58,32 @@ ul > li > a:hover {
   height: 40vh;
 }
 
-.img-home > img {
-  width: 100%;
-  height: 100%;
-}
-
 .location {
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form {
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main > div:not(:nth-of-type(1)) {
+  padding: 6%;
+}
+
+.img-home {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.welcome {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+
+#bg-main {
+  filter: brightness(30%);
+  width: 100%;
+  height: 100%;
 }
